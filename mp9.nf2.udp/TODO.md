@@ -18,7 +18,7 @@ d'un array de bytes:*
 <hr>
 
 >**Tasca 2**  
-> Seguint l'esquema après a la tasca 1, crea un servidor que generi un número aleatori(fes-ho amb la classe '[SecretNum](mp9/nf2/udp/unicast/joc/SecretNum.java)' i atengui
+> Seguint l'esquema après a la tasca 1, crea un servidor que generi un número aleatori(fes-ho amb la classe '[SecretNum](src/mp9/nf2/udp/unicast/joc/SecretNum.java)' i atengui
 > a les peticions dels clients que intenten encertar aquest número.
 > Ves comptabilitzant els intents que cada client/jugador fà.
 >
