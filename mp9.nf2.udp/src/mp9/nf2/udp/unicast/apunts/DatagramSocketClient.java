@@ -41,6 +41,7 @@ public class DatagramSocketClient {
             socket.receive(packet);
             sendingData = getDataToRequest(packet.getData(), packet.getLength());
         }
+        socket.close();
 
     }
 
