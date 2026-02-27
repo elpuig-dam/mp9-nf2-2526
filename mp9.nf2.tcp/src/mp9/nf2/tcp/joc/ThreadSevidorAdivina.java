@@ -25,22 +25,17 @@ public class ThreadSevidorAdivina implements Runnable {
 		acabat = false;
 		in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 		out= new PrintStream(clientSocket.getOutputStream());
-		
 	}
 
 	@Override
 	public void run() {
 		try {
 			while(!acabat) {
-				
 				msgSortint = generaResposta(msgEntrant);
-				
 				out.println(msgSortint);
 				out.flush();
 				msgEntrant = in.readLine();
 				intentsJugador = Integer.parseInt(in.readLine());
-				
-				
 			}
 		}catch(IOException e){
 			System.out.println(e.getLocalizedMessage());
